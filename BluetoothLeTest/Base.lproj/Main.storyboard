@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BluetoothLeTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BluetoothLe test application" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3tt-st-yZk">
+                                <rect key="frame" x="53" y="30" width="214" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qE4-x0-3Oe">
+                                <rect key="frame" x="10" y="95" width="300" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="2vh-q5-o8k"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ax-jP-O7k">
+                                <rect key="frame" x="60" y="143" width="200" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Sgg-Ix-kPN"/>
+                                </constraints>
+                                <state key="normal" title="Scan (Central)"/>
+                                <connections>
+                                    <action selector="scanButtonTouchDown:" destination="BYZ-38-t0r" eventType="touchDown" id="3mt-c6-mr6"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hOW-0g-xpV">
+                                <rect key="frame" x="60" y="216" width="200" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="beo-4l-PPa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TtM-TD-Mnk">
+                                <rect key="frame" x="60" y="254" width="200" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="u6v-Rw-cfN"/>
+                                </constraints>
+                                <state key="normal" title="Advertise (Peripheral)"/>
+                                <connections>
+                                    <action selector="advertiseButtonTouchDown:" destination="BYZ-38-t0r" eventType="touchDown" id="Qve-0T-uPg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3ax-jP-O7k" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4uL-r3-O2V"/>
+                            <constraint firstItem="TtM-TD-Mnk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Bjf-at-tMQ"/>
+                            <constraint firstItem="3tt-st-yZk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="M2f-rF-5zd"/>
+                            <constraint firstItem="TtM-TD-Mnk" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-15" id="Nqs-qv-ZIP"/>
+                            <constraint firstItem="3tt-st-yZk" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-243.5" id="TZb-fD-icA"/>
+                            <constraint firstItem="hOW-0g-xpV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TZq-Wz-xh4"/>
+                            <constraint firstItem="qE4-x0-3Oe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mMQ-1q-3Oa"/>
+                            <constraint firstItem="hOW-0g-xpV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-53" id="nfl-Jb-hqi"/>
+                            <constraint firstItem="qE4-x0-3Oe" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-178.5" id="p82-pN-OwD"/>
+                            <constraint firstItem="3ax-jP-O7k" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-126" id="wbX-Jv-9IA"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="mAdvertiseButton" destination="TtM-TD-Mnk" id="H1j-WM-r4r"/>
+                        <outlet property="mLabel" destination="qE4-x0-3Oe" id="Qn9-yW-lCG"/>
+                        <outlet property="mScanButton" destination="3ax-jP-O7k" id="Bgs-78-ITI"/>
+                        <outlet property="mTextField" destination="hOW-0g-xpV" id="Px3-ec-eCJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="308" y="563"/>
+        </scene>
+    </scenes>
+</document>
